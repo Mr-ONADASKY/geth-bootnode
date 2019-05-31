@@ -11,6 +11,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 COPY *.sh /usr/bin/
+RUN chmod +x /usr/bin/run.sh
 
 CMD ["/usr/bin/run.sh"]
 
