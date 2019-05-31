@@ -1,5 +1,7 @@
 Environment variables
 
 `
-nodekeyhex=     key from your bootnodes boot.key file
+NODEKEYHEX      key from your bootnodes boot.key file
+GETH_BASE_URL   base url for the geth packages
+BINARY geth     geth package name
 `

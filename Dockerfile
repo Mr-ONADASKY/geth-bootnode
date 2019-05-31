@@ -12,11 +12,6 @@ RUN apt-get update \
 
 COPY *.sh /usr/bin/
 
-RUN set -x \
-  && addgroup -g 1000 -S bootnode \
-  && adduser -u 1000 -D -S -G bootnode bootnode \
-  && addgroup bootnode wheel
-
 CMD ["/usr/bin/run.sh"]
 
 EXPOSE 30301/udp
